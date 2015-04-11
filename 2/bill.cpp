@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -57,12 +58,38 @@ int main()
             bill = (31*2.75)+((HCF-31)*2.89);
         }
     }
-    
+    cout<<fixed<<showpoint;
+
     cout<<"Initial meter reading: "<<readingOne<<endl;
     cout<<"Final meter reading: "<<readingTwo<<endl;
     cout<<"Customer name: "<<name<<endl;
-    cout<<"Month number: "<<month<<endl;
+    cout<<"Month number (1=Jan, 2=Feb, etc.): "<<month<<endl;
     cout<<"---"<<endl;
-    cout.precision(5);
-    cout<< "The bill for " << name << " is $" << bill << endl;
+    
+    if(readingOne < 0)
+    {
+        cout << "The initial meter reading must be nonnegative.";
+        return(0);
+    }
+    
+    else if(readingTwo < readingOne)
+    {
+        cout<<"The final reading must be at least as large as the initial reading.";
+        return(0);
+    }
+    else if(name.length() == 0)
+    {
+        cout<<"You must enter a customer name.";
+        return(0);
+    }
+    else if(month < 1 || month >12)
+    {
+        cout<<"The month number must be in the range 1 through 12.";
+        return(0);
+    }
+    else
+    {
+        cout<< "The bill for " << name << " is $" <<setprecision(2)<< bill << '\n';
+    }
+    
 }

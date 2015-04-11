@@ -232,6 +232,7 @@
 				990CE0DC1AD7377300E349CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
