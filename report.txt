@@ -1,0 +1,26 @@
+Project 2
+Aaron Yih
+
+
+a.) The most notable obstacle I overcame was setting the precision to two decimal places. Several of the solutions online misled me with instructions to use “fixed.” After several failed attempts, I found a solution that seemed to work: #include <iomanip> and “<<setprecision(2)<< bill << ‘\n’.
+
+Another notable challenge I had was unrelated to the program but was equally frustrating. Signing up for an account required that I wait a day. After that, I had a lot of trouble using Remote Desktop Connection. It took me several hours to finally connect to the SEASNET server. 
+
+b.) 	i.)negative meter readings(-100, 10, Person Name, 8)
+	ii.)final meter reading greater than initial meter reading(450, 30, Person Name, 9)
+	iii.)meter did not change(100, 100, Person Name, 5)
+	iv.)name is empty(100, 300, “”, 7)
+	v.)month is not valid(23, 52, Person Name, 45)
+	vi.)all data valid (100, 545, Person Name, 3)
+	vii.) wrong data type for name input(190, 300, 54, 6)
+	
+	reasons:
+	i.) Test a possible but invalid user input
+	ii.) Test a possible but invalid user input
+	iii.) Test a possible and valid user input that has potential to cause an issue
+	iv.) Test a possible but invalid user input
+	v.) Test a possible but invalid user input
+	vi.) Test the program for valid values 
+	vii.) Test a possible but invalid user input
+	
+	

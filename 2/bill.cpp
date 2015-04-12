@@ -15,11 +15,11 @@ using namespace std;
 int main()
 {
     cout<<"Initial meter reading: ";
-    int readingOne;
+    double readingOne;
     cin>>readingOne;
     
     cout<< "Final meter reading: ";
-    int readingTwo;
+    double readingTwo;
     cin>>readingTwo;
     cin.ignore(10000,'\n');
     

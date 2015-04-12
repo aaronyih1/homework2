@@ -1,0 +1,105 @@
+1.) 
+“
+
+
+
+“ the output is four returns. 
+	string grendel = "endl”; // this sets grendel to endl
+	cout << "endl"; // this ends the line and puts the cursor to the next line
+	cout << grendel; // since grendel is endl, this line also ends the line and puts the cursor to the next line
+	cout << endl; // this does the same as line 2
+	cout << "grendel"; // this does the same as line 3
+
+
+2.) This program takes an int as user input (len), then prints 
+n =len-1 number of spaces followed by a # symbol and an endl, until n = 0, at which point, the for loop prints one more # and endl and then stops running.
+
+ex: (len = 4) “ ”” “” “#
+	      ” ”” “#
+	      ” “#
+	      #
+
+3.)
+	#include <iostream>
+	using namespace std;
+
+	int main()
+	{
+	    int len;
+
+	    cout << "Enter a number: ";
+	    cin >> len;
+
+	    for (int i = 0; i < len; i++)
+	    {
+		int j = i+1;
+		while(j < len)
+		{
+			cout << “ “;
+			j++;
+		}
+		cout << "#" << endl;
+	    }
+	}
+
+4.)
+
+	#include <iostream>
+	using namespace std;
+
+	int main()
+	{
+	    int len;
+
+	    cout << "Enter a number: ";
+	    cin >> len;
+	    int i = 0;
+	    if(len < 0)
+		len = len*(-1);
+	    else
+		len = len;
+		
+	    do
+	    {
+		int j = i+1;
+		while(j < len)
+		{
+			cout << “ “;
+			j++;
+		}
+		cout << "#" << endl;
+		i++;
+	    }
+	    while(i < len);
+
+	}
+5.)
+
+	switch(month)
+	{
+		case ‘6’ :
+			cout<< “summer solstice”;
+			break;
+		case ’12’ :
+			cout<< “winter solstice”;
+			break;
+		case ‘3’ :
+			cout<< “equinox”;
+			break;
+		case ‘9’ :
+			cout<< “equinox”;
+			break;
+		default :
+			cout<< “nothing special”;
+	}
+
+
+
+
+
+
+
+
+
+
+
