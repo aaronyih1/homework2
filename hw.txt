@@ -1,18 +1,17 @@
 1.) 
 “
-
-
-
+endlendl
+grendel
 “ the output is four returns. 
-	string grendel = "endl”; // this sets grendel to endl
-	cout << "endl"; // this ends the line and puts the cursor to the next line
-	cout << grendel; // since grendel is endl, this line also ends the line and puts the cursor to the next line
-	cout << endl; // this does the same as line 2
-	cout << "grendel"; // this does the same as line 3
+	string grendel = "endl”; // this sets grendel to the string “endl”
+	cout << "endl"; // this prints the string “endl”
+	cout << grendel; // this prints the string “endl”
+	cout << endl; // since grendel is endl command, this line ends the line 
+	cout << "grendel"; // this prints the string “grendel”
 
 
 2.) This program takes an int as user input (len), then prints 
-n =len-1 number of spaces followed by a # symbol and an endl, until n = 0, at which point, the for loop prints one more # and endl and then stops running.
+n =len-1 number of spaces followed by a # symbol and an endl, (subtracting 1 from n) until n = 1, at which point, the for loop prints one more # and endl and then stops running.
 
 ex: (len = 4) “ ”” “” “#
 	      ” ”” “#
