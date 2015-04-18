@@ -74,23 +74,31 @@ ex: (len = 4) “ ”” “” “#
 	}
 5.)
 
-	switch(month)
+	#include <iostream>
+	using namespace std;
+
+	int main()
 	{
-		case ‘6’ :
-			cout<< “summer solstice”;
-			break;
-		case ’12’ :
-			cout<< “winter solstice”;
-			break;
-		case ‘3’ :
-			cout<< “equinox”;
-			break;
-		case ‘9’ :
-			cout<< “equinox”;
-			break;
-		default :
-			cout<< “nothing special”;
+		switch(month)
+		{
+			case 6 :
+				cout<< “summer solstice”;
+				break;
+			case 12 :
+				cout<< “winter solstice”;
+				break;
+			case 3 :
+				cout<< “equinox”;
+				break;
+			case 9 :
+				cout<< “equinox”;
+				break;
+			default :
+				cout<< “nothing special”;
+		}
+
 	}
+
 
 
 
