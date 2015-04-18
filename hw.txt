@@ -1,8 +1,7 @@
 1.) 
-“
-endlendl
-grendel
-“ the output is four returns. 
+the output is
+“endlendl
+ grendel“  
 	string grendel = "endl”; // this sets grendel to the string “endl”
 	cout << "endl"; // this prints the string “endl”
 	cout << grendel; // this prints the string “endl”
@@ -11,7 +10,7 @@ grendel
 
 
 2.) This program takes an int as user input (len), then prints 
-n =len-1 number of spaces followed by a # symbol and an endl, (subtracting 1 from n) until n = 1, at which point, the for loop prints one more # and endl and then stops running.
+len-n number of spaces followed by a # symbol and an endl, (n starts at 1 and goes until len-n=0) until n = 1, at which point, the for loop prints one more # and endl and then stops running.
 
 ex: (len = 4) “ ”” “” “#
 	      ” ”” “#
